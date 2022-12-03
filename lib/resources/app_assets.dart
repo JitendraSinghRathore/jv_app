@@ -15,6 +15,19 @@ class AppAssets {
  // verification Screen Assets
   static const String verification = 'assets/images/verification_back.png';
 
+  // App logo
+  static const String jeLogo = 'assets/images/je_logo.png';
+  static const String userLogo = 'assets/images/personal_logo.png';
+  static const String homeLogo = 'assets/images/home_logo.png';
+  static const String storeLogo = 'assets/images/store_logo.png';
+  static const String account = 'assets/images/acount_logo.png';
+
+
+  // Temp Asset
+  static const String harry = 'assets/images/harry.png';
+  static const String profile = 'assets/temp/profile.png';
+
+
 
 
 }

@@ -202,7 +202,7 @@ class _Mobile_Login_screenState extends State<Mobile_Login_screen> {
                           GestureDetector(
                             onTap: ()
                             {
-                              Get.offNamed(MyRouter.onVerificationScreen);
+                              Get.offNamed(MyRouter.bottomNavBarHomeScreen);
                             },
                             child:Align(
                               alignment: Alignment.bottomCenter,
