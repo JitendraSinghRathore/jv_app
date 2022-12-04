@@ -20,13 +20,12 @@ class MyRouter {
 
 
   static var route = [
-    GetPage(name: '/', page: () => const SplashScreen()),
+    GetPage(name: '/', page: () => const BottomNavBarHomeScreen()),
     GetPage(name: MyRouter.welcomeScreen, page: () => const WelcomeScreen()),
     GetPage(name: MyRouter.onBoardingScreen, page: () => const OnBoardongScreen()),
     GetPage(name: MyRouter.onMobileLoginScreen, page: () => const Mobile_Login_screen()),
     GetPage(name: MyRouter.onVerificationScreen, page: () => const VerificationScreen()),
     GetPage(name: MyRouter.bottomNavBarHomeScreen, page: () => const BottomNavBarHomeScreen()),
     GetPage(name: MyRouter.servicesScreen, page: () => const ServicesScreen()),
-
   ];
 }

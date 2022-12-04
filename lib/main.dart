@@ -19,11 +19,10 @@ class MyApp extends StatelessWidget {
           return GetMaterialApp(
             title: 'JEveux',
             debugShowCheckedModeBanner: false,
-            initialRoute: "/splashScreen",
             getPages: MyRouter.route,
             theme: ThemeData(
               primarySwatch: primaryColorShades,
-              fontFamily: 'Poppins',
+              fontFamily: "Roboto"
             ),
           );
         },
