@@ -5,6 +5,9 @@ import 'package:jv_app/screens/verification_screen.dart';
 
 import '../screens/home_screens/main_home_screen.dart';
 import '../screens/home_screens/services_screen.dart';
+import '../screens/home_screens/store_list.dart';
+import '../screens/home_screens/store_screen.dart';
+import '../screens/home_screens/summary_screen.dart';
 import '../screens/splash_screen.dart';
 import '../screens/welcome_screen.dart';
 
@@ -16,6 +19,9 @@ class MyRouter {
   static var onVerificationScreen = "/onVerificationScreen";
   static var bottomNavBarHomeScreen = "/bottomNavBarHomeScreen";
   static var servicesScreen = "/servicesScreen";
+  static var storeListScreen = "/storeListScreen";
+  static var storeScreen = "/storeScreen";
+  static var summaryScreen = "/summaryScreen";
 
 
 
@@ -27,5 +33,8 @@ class MyRouter {
     GetPage(name: MyRouter.onVerificationScreen, page: () => const VerificationScreen()),
     GetPage(name: MyRouter.bottomNavBarHomeScreen, page: () => const BottomNavBarHomeScreen()),
     GetPage(name: MyRouter.servicesScreen, page: () => const ServicesScreen()),
+    GetPage(name: MyRouter.storeListScreen, page: () => const StoreListScreen()),
+    GetPage(name: MyRouter.storeScreen, page: () => const StoreScreen()),
+    GetPage(name: MyRouter.summaryScreen, page: () => const SummaryScreen()),
   ];
 }

@@ -95,15 +95,15 @@ class _BottomNavBarHomeScreenState extends State<BottomNavBarHomeScreen> {
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
+                      children: const [
+                        Text(
                           "Use current location",
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w500
                           ),),
-                        const SizedBox(height: 4,),
-                        const Text(
+                        SizedBox(height: 4,),
+                        Text(
                           "Ayodhya Nagar Extension, Ayodhya Bypass",
                           style: TextStyle(
                               fontSize: 14,
@@ -143,15 +143,15 @@ class _BottomNavBarHomeScreenState extends State<BottomNavBarHomeScreen> {
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                              "Use current location",
+                          children: const [
+                            Text(
+                              "Home",
                               style: TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w500
                               ),),
-                            const SizedBox(height: 4,),
-                            const Text(
+                            SizedBox(height: 4,),
+                            Text(
                               "Ayodhya Nagar Extension, Ayodhya Bypass",
                               style: TextStyle(
                                   fontSize: 14,

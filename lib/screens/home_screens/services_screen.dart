@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:jv_app/routers/my_router.dart';
 
 import '../../resources/dimensions.dart';
 
@@ -62,6 +63,7 @@ class _ServicesScreenState extends State<ServicesScreen> {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: (){
+                      Get.toNamed(MyRouter.storeListScreen);
                     },
                     child: Container(
                       decoration: BoxDecoration(
