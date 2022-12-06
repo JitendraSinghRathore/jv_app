@@ -26,7 +26,7 @@ class MyRouter {
 
 
   static var route = [
-    GetPage(name: '/', page: () => const BottomNavBarHomeScreen()),
+    GetPage(name: '/', page: () => const OnBoardongScreen()),
     GetPage(name: MyRouter.welcomeScreen, page: () => const WelcomeScreen()),
     GetPage(name: MyRouter.onBoardingScreen, page: () => const OnBoardongScreen()),
     GetPage(name: MyRouter.onMobileLoginScreen, page: () => const Mobile_Login_screen()),

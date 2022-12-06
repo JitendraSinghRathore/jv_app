@@ -12,6 +12,15 @@ class AppAssets {
   static const String onBoardingThree = 'assets/images/onBoardingThree.png';
   static const String nextOnBoarding = 'assets/images/next_onBoarding.png';
 
+
+  static const String one = 'assets/images/1.jpeg';
+  static const String two = 'assets/images/2.jpeg';
+  static const String three = 'assets/images/3.jpeg';
+  static const String four = 'assets/images/4.jpeg';
+  static const String five = 'assets/images/5.jpeg';
+  static const String six = 'assets/images/6.jpeg';
+  static const String seven = 'assets/images/7.jpeg';
+
  // verification Screen Assets
   static const String verification = 'assets/images/verification_back.png';
 
@@ -26,6 +35,19 @@ class AppAssets {
   // Temp Asset
   static const String harry = 'assets/images/harry.png';
   static const String profile = 'assets/temp/profile.png';
+
+
+  //Account Screen
+  static const String aboutJEAccount = 'assets/images/about_je_account.png';
+  static const String bookingAccount = 'assets/images/booking_account.png';
+  static const String deleteAccount = 'assets/images/delete_account.png';
+  static const String forwordAccount = 'assets/images/forword_account.png';
+  static const String helpAccount = 'assets/images/help_account.png';
+  static const String logoutAccount = 'assets/images/logout_account.png';
+  static const String manageAddressAccount = 'assets/images/manage_address_account.png';
+  static const String rateJEAccount = 'assets/images/rate_je_account.png';
+  static const String rateUsAccount = 'assets/images/rate_us_account.png';
+  static const String referEarnAccount = 'assets/images/refer_earn_account.png';
 
 
 

@@ -25,6 +25,14 @@ class AppStrings {
   static const String experience = "Experience";
   static const String country = "Country";
 
+
+  // Verification Screen
+  static const String appVerificationOtp = "Verification code";
+  static const String conformVerificationOtp = "CONFIRMATION";
+  static const String titleVerificationOtp = "Please type the Verification code \n sent to +91 9920304050";
+  static const String resendVerificationOtp = "Resend Code";
+  static const String verifyVerificationOtp = "Verify";
+
 // Home Screen
   static const String category = "Category";
   static const String seeAll = "See All";
@@ -39,5 +47,16 @@ static const String verify = "Verify";
 static const String save = "Save";
 static const String startConsultation = "Start Consultation";
 static const String publish = "Publish";
+
+//Account Screen
+  static const String booking = "My Booking";
+  static const String address = "Manage Address";
+  static const String earn = "Refer & Earn";
+  static const String rateUs = "Rate us";
+  static const String about = "About JEveux";
+  static const String rateJe = "Rate JEveux Company";
+  static const String deleteAccount = "Delete Account";
+  static const String logout = "Logout";
+  static const String help = "Help";
 
 }

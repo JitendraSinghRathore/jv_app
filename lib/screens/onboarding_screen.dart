@@ -111,14 +111,14 @@ class _OnBoardongScreenState extends State<OnBoardongScreen> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           SizedBox(
-                            height: 10,
+                            height: 25,
                           ),
                           Image(
                             image: const AssetImage(
-                              AppAssets.onBoardingOne,
+                              AppAssets.five,
                             ),
                             height: 450,
-                            fit: BoxFit.fitWidth,
+                            fit: BoxFit.contain,
                             width: MediaQuery.of(context).size.width,
                           ),
                           const SizedBox(height: 5.0),
@@ -154,10 +154,10 @@ class _OnBoardongScreenState extends State<OnBoardongScreen> {
                           ),
                           Image(
                             image: const AssetImage(
-                              AppAssets.onBoardingTwo,
+                              AppAssets.six,
                             ),
                             height: 450,
-                            fit: BoxFit.fitWidth,
+                            fit: BoxFit.contain,
                             width: MediaQuery.of(context).size.width,
                           ),
                           const SizedBox(height: 5.0),
@@ -193,10 +193,10 @@ class _OnBoardongScreenState extends State<OnBoardongScreen> {
                           ),
                           Image(
                             image: const AssetImage(
-                              AppAssets.onBoardingThree,
+                              AppAssets.seven,
                             ),
                             height: 450,
-                            fit: BoxFit.fitWidth,
+                            fit: BoxFit.contain,
                             width: MediaQuery.of(context).size.width,
                           ),
                           const SizedBox(height: 5.0),
