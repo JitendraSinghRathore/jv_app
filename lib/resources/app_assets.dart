@@ -12,14 +12,9 @@ class AppAssets {
   static const String onBoardingThree = 'assets/images/onBoardingThree.png';
   static const String nextOnBoarding = 'assets/images/next_onBoarding.png';
 
-
-  static const String one = 'assets/images/1.jpeg';
-  static const String two = 'assets/images/2.jpeg';
-  static const String three = 'assets/images/3.jpeg';
-  static const String four = 'assets/images/4.jpeg';
-  static const String five = 'assets/images/5.jpeg';
-  static const String six = 'assets/images/6.jpeg';
-  static const String seven = 'assets/images/7.jpeg';
+  static const String onBoardingBottom = 'assets/images/onBoardoingBottom.png';
+  static const String onBoardingLineLeft = 'assets/images/onBoardingLine_left.png';
+  static const String onBoardingLineRight = 'assets/images/onBoardingLine_right.png';
 
  // verification Screen Assets
   static const String verification = 'assets/images/verification_back.png';

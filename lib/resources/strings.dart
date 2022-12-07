@@ -6,10 +6,10 @@ class AppStrings {
   static const String userButton = "JV User";
 
   // Welcome onBoardingScreen
-  static const String onBoardingTitleOne = "Beauty parlour \n at your home";
-  static const String onBoardingSubTitleOne = " Lorem ipsum is a placeholder text commonly \n used to demonstrate the visual.";
-  static const String onBoardingTitleTwo = " Plumber & expart nearby you";
-  static const String onBoardingTitleThree = "Professional home cleaning";
+  static const String onBoardingTitleOne = "JeVeux Home services";
+  static const String onBoardingTitleTwo = "Book reliable & high quality services delivered\n by trained professionals conveniently \nat home";
+  static const String onBoardingTitleThree = "Our services include beauty treatments,\n massages, haircuts, home cleaning,handymen,\n appliance repair, painting, pest control,\n landscaping and ";
+  static const String onBoardingTitleFour = "Not pleased with our services or if you did not\nhave a good experience you will be refunded\n for unsatisfied portion";
   static const String onBoardingGetStartButton = "Get Started";
   static const String onBoardingSkipButton = "Skip";
 
