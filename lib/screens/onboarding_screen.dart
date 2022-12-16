@@ -30,7 +30,6 @@ class _OnBoardongScreenState extends State<OnBoardongScreen> {
     }
     return list;
   }
-
    Widget _indicator(bool isActive) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 225),
@@ -43,13 +42,11 @@ class _OnBoardongScreenState extends State<OnBoardongScreen> {
       ),
     );
   }
-
   @override
   void initState() {
     super.initState();
     _pageController = PageController(initialPage: 0);
   }
-
   @override
   void dispose() {
     super.dispose();

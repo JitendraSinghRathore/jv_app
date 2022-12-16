@@ -59,4 +59,12 @@ static const String publish = "Publish";
   static const String logout = "Logout";
   static const String help = "Help";
 
+//Edit Profile Screen
+  static const String profileTitle = "Edit Profile";
+  static const String name = "Full Name";
+  static const String email = "Email";
+  static const String mobileNo = "Mobile Number";
+  static const String saveChange = "Save changes";
+
+
 }

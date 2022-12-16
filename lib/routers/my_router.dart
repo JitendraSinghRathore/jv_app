@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:jv_app/screens/account_screens/edit_profile.dart';
 import 'package:jv_app/screens/mobile_login_screen.dart';
 import 'package:jv_app/screens/onboarding_screen.dart';
 import 'package:jv_app/screens/verification_screen.dart';
@@ -22,6 +23,7 @@ class MyRouter {
   static var storeListScreen = "/storeListScreen";
   static var storeScreen = "/storeScreen";
   static var summaryScreen = "/summaryScreen";
+  static var editProfileScreen = "/editProfileScreen";
 
 
 
@@ -36,5 +38,6 @@ class MyRouter {
     GetPage(name: MyRouter.storeListScreen, page: () => const StoreListScreen()),
     GetPage(name: MyRouter.storeScreen, page: () => const StoreScreen()),
     GetPage(name: MyRouter.summaryScreen, page: () => const SummaryScreen()),
+    GetPage(name: MyRouter.editProfileScreen, page: () => const EditProfileScreen())
   ];
 }

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:jv_app/resources/app_assets.dart';
-import 'package:jv_app/screens/home_screens/account_screen.dart';
+import 'package:jv_app/screens/account_screens/account_screen.dart';
 
 import '../../controllers/main_home_controller.dart';
 import '../../resources/app_theme.dart';

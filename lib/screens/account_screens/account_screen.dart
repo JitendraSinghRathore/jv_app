@@ -8,6 +8,7 @@ import 'package:jv_app/resources/strings.dart';
 import '../../resources/app_assets.dart';
 import '../../resources/common_text.dart';
 import '../../resources/poppins_common_text.dart';
+import '../../routers/my_router.dart';
 
 class AccountScreen extends StatefulWidget {
   const AccountScreen({Key? key}) : super(key: key);
@@ -73,29 +74,34 @@ class _AccountScreenState extends State<AccountScreen> {
                   ),
                 ),
                 Spacer(),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Color(0xffefefef)),
-                    margin: const EdgeInsets.only(right: 14),
-                    height: 45,
-                    width: 45,
-                    padding: const EdgeInsets.all(2),
-                    alignment: Alignment.center,
-                    child: Badge(
+
+                GestureDetector(
+                  onTap: ()
+                  {
+                    Get.toNamed(MyRouter.editProfileScreen);
+                  },
+                  child:  Align(
+                    alignment: Alignment.centerRight,
+                    child: Container(
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Color(0xffefefef)),
+                      margin: const EdgeInsets.only(right: 14),
+                      height: 45,
+                      width: 45,
+                      padding: const EdgeInsets.all(2),
+                      alignment: Alignment.center,
+                      child: Badge(
                         animationType: BadgeAnimationType.fade,
                         animationDuration: const Duration(seconds: 1),
                         position: const BadgePosition(top: -4, end: 2),
                         showBadge: false,
-                        child: const FaIcon(
-                          FontAwesomeIcons.pen,
-                          color: Colors.black,
-                          size: 22,
-                        )),
+                        child: Image.asset(AppAssets.editIcon,height: 22,width: 22,),),
+                    ),
                   ),
-                ),
+                )
+
+
               ],
             ),
           ),
@@ -396,13 +402,19 @@ class _AccountScreenState extends State<AccountScreen> {
                 padding: const EdgeInsets.only(right: 40, top: 25),
                 child: Container(
                     decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey,
+                            offset: Offset(0.0, 1.0), //(x,y)
+                            blurRadius: 6.0,
+                          ),
+                        ],
                         borderRadius: BorderRadius.circular(50),
                         border: Border.all(color: Colors.white, width: 4),
                         color: const Color(0xff52B46B)),
                     height: 75,
                     width: 75,
                     child: Container(
-
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [

@@ -43,6 +43,7 @@ class AppAssets {
   static const String rateJEAccount = 'assets/images/rate_je_account.png';
   static const String rateUsAccount = 'assets/images/rate_us_account.png';
   static const String referEarnAccount = 'assets/images/refer_earn_account.png';
+  static const String editIcon = 'assets/images/editIcon.png';
 
 
 
