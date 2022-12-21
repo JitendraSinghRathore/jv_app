@@ -1,8 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:jv_app/controllers/edit_profile_controller.dart';
+import 'package:jv_app/resources/app_theme.dart';
 import 'package:jv_app/routers/my_router.dart';
 
 import '../../resources/dimensions.dart';
@@ -17,6 +20,9 @@ class EditProfileScreen extends StatefulWidget {
 }
 
 class _EditProfileScreenState extends State<EditProfileScreen> {
+  TextEditingController numberController = TextEditingController();
+
+  final controller = Get.put(EditProfileController());
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -46,7 +52,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.only(
+          padding: const EdgeInsets.only(
             left: 25,
             right: 25,
           ),
@@ -62,24 +68,23 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 fontWeight: FontWeight.w500,
                 color: Colors.grey,
               ),
-              Container(
-                child: TextField(
-                  style: GoogleFonts.poppins(
-                      color: Colors.black,
+              TextField(
+                style: GoogleFonts.poppins(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16),
+                obscureText: false,
+                decoration: InputDecoration(
+                  hintText: 'enter name',
+                  hintStyle: GoogleFonts.poppins(
+                      color: Colors.grey,
                       fontWeight: FontWeight.w600,
                       fontSize: 16),
-                  obscureText: false,
-                  decoration: InputDecoration(
-                    hintText: 'enter name',
-                    hintStyle: GoogleFonts.poppins(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w600,
-                        fontSize: 16),
-                  ),
                 ),
               ),
-              SizedBox(height: 25,),
-
+              const SizedBox(
+                height: 25,
+              ),
               const PoppinsAddText(
                 textAlign: TextAlign.start,
                 text: AppStrings.email,
@@ -104,7 +109,9 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   ),
                 ),
               ),
-              SizedBox(height: 25,),
+              const SizedBox(
+                height: 25,
+              ),
               const PoppinsAddText(
                 textAlign: TextAlign.start,
                 text: AppStrings.mobileNo,
@@ -113,23 +120,29 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 fontWeight: FontWeight.w500,
                 color: Colors.grey,
               ),
-              Container(
-                child: TextField(
-                  style: GoogleFonts.poppins(
-                      color: Colors.black,
+              TextField(
+                controller: numberController,
+                keyboardType: TextInputType.number,
+                inputFormatters: [
+                  FilteringTextInputFormatter.digitsOnly,
+                  LengthLimitingTextInputFormatter(10)
+                ],
+                style: GoogleFonts.poppins(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16),
+                obscureText: false,
+                decoration: InputDecoration(
+                  hintText: 'enter mobile no',
+                  hintStyle: GoogleFonts.poppins(
+                      color: Colors.grey,
                       fontWeight: FontWeight.w600,
                       fontSize: 16),
-                  obscureText: false,
-                  decoration: InputDecoration(
-                    hintText: 'enter mobile no',
-                    hintStyle: GoogleFonts.poppins(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w600,
-                        fontSize: 16),
-                  ),
                 ),
+                onChanged: (val) {
+                  controller.updateNumberCount(val.length);
+                },
               ),
-
             ],
           ),
         ),
@@ -142,16 +155,20 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             },
             style: ElevatedButton.styleFrom(
                 minimumSize: Size(size.width, 50),
-                backgroundColor: Colors.black,
+                backgroundColor: controller.numberCount > 9
+                    ? Colors.black
+                    : Color(0xffD8D8D8),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10))),
-            child:PoppinsAddText(
+            child: PoppinsAddText(
               textAlign: TextAlign.start,
               text: AppStrings.saveChange,
               fontSize: 14,
               letterSpacing: 1,
               fontWeight: FontWeight.w500,
-              color: Colors.white,
+              color: controller.numberCount > 9
+                  ? Colors.white
+                  : const Color(0xff858585),
             )),
       ),
     );

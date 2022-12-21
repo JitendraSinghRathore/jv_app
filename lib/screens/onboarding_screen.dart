@@ -30,7 +30,8 @@ class _OnBoardongScreenState extends State<OnBoardongScreen> {
     }
     return list;
   }
-   Widget _indicator(bool isActive) {
+
+  Widget _indicator(bool isActive) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 225),
       margin: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -42,11 +43,13 @@ class _OnBoardongScreenState extends State<OnBoardongScreen> {
       ),
     );
   }
+
   @override
   void initState() {
     super.initState();
     _pageController = PageController(initialPage: 0);
   }
+
   @override
   void dispose() {
     super.dispose();
@@ -87,7 +90,7 @@ class _OnBoardongScreenState extends State<OnBoardongScreen> {
                   ),
                 ),
               ),
-             /* Align(
+              /* Align(
                 alignment: Alignment.bottomCenter,
                 child: Image(
                   image: const AssetImage(
@@ -114,7 +117,7 @@ class _OnBoardongScreenState extends State<OnBoardongScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
-                          SizedBox(
+                          const SizedBox(
                             height: 45,
                           ),
                           Image(
@@ -190,14 +193,12 @@ class _OnBoardongScreenState extends State<OnBoardongScreen> {
                               text: AppStrings.onBoardingTitleThree,
                               style: GoogleFonts.inter(
                                   textStyle: TextStyle(
-
                                       height: 1.3,
                                       color: Color(0xff635C5C),
                                       fontSize: 16,
                                       fontWeight: FontWeight.w700)),
                               children: const <TextSpan>[
                                 TextSpan(
-
                                     text: 'more',
                                     style: TextStyle(
                                         decoration: TextDecoration.underline,
@@ -213,7 +214,7 @@ class _OnBoardongScreenState extends State<OnBoardongScreen> {
                     ),
                     Padding(
                       padding:
-                      const EdgeInsets.only(top: 20, left: 10, right: 10),
+                          const EdgeInsets.only(top: 20, left: 10, right: 10),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
@@ -244,7 +245,6 @@ class _OnBoardongScreenState extends State<OnBoardongScreen> {
                   ],
                 ),
               ),
-
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Container(
@@ -256,45 +256,48 @@ class _OnBoardongScreenState extends State<OnBoardongScreen> {
                 ),
               ),
               const Spacer(),
-
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Container(
                   padding: EdgeInsets.only(bottom: 250),
                   child: Row(
-
                     children: [
-                      Expanded(child: Image(
-                        image: const AssetImage(
-                          AppAssets.onBoardingLineLeft,
+                      Expanded(
+                        child: Image(
+                          image: const AssetImage(
+                            AppAssets.onBoardingLineLeft,
+                          ),
+                          fit: BoxFit.contain,
+                          width: MediaQuery.of(context).size.width,
                         ),
-                        fit: BoxFit.contain,
-                        width: MediaQuery.of(context).size.width,
-                      ),),
-                      SizedBox(height: 5,),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
                       Expanded(
                         child: Text(AppStrings.onBoardingSkipButton,
-                          textAlign: TextAlign.center,
-                          style: GoogleFonts.inter(
-                            textStyle: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontSize: 15,
-                              color: Colors.black,
-                            ),
-                          )),),
-                      Expanded(child: Image(
-                        image: const AssetImage(
-                          AppAssets.onBoardingLineRight,
+                            textAlign: TextAlign.center,
+                            style: GoogleFonts.inter(
+                              textStyle: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 15,
+                                color: Colors.black,
+                              ),
+                            )),
+                      ),
+                      Expanded(
+                        child: Image(
+                          image: const AssetImage(
+                            AppAssets.onBoardingLineRight,
+                          ),
+                          fit: BoxFit.contain,
+                          width: MediaQuery.of(context).size.width,
                         ),
-                        fit: BoxFit.contain,
-                        width: MediaQuery.of(context).size.width,
-                      ),)
+                      )
                     ],
                   ),
                 ),
               ),
-
-
               Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [

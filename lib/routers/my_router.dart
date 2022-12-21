@@ -1,5 +1,8 @@
 import 'package:get/get.dart';
 import 'package:jv_app/screens/account_screens/edit_profile.dart';
+import 'package:jv_app/screens/account_screens/manageaddress.dart';
+import 'package:jv_app/screens/account_screens/referearn.dart';
+import 'package:jv_app/screens/bookings/mybooking.dart';
 import 'package:jv_app/screens/mobile_login_screen.dart';
 import 'package:jv_app/screens/onboarding_screen.dart';
 import 'package:jv_app/screens/verification_screen.dart';
@@ -24,20 +27,38 @@ class MyRouter {
   static var storeScreen = "/storeScreen";
   static var summaryScreen = "/summaryScreen";
   static var editProfileScreen = "/editProfileScreen";
-
-
+  static var manageAddressScreen = "/manageAddressScreen";
+  static var referEarnScreen = "/referEarnScreen";
+  static var myBookingScreen = "/myBookingScreen";
 
   static var route = [
     GetPage(name: '/', page: () => const OnBoardongScreen()),
     GetPage(name: MyRouter.welcomeScreen, page: () => const WelcomeScreen()),
-    GetPage(name: MyRouter.onBoardingScreen, page: () => const OnBoardongScreen()),
-    GetPage(name: MyRouter.onMobileLoginScreen, page: () => const Mobile_Login_screen()),
-    GetPage(name: MyRouter.onVerificationScreen, page: () => const VerificationScreen()),
-    GetPage(name: MyRouter.bottomNavBarHomeScreen, page: () => const BottomNavBarHomeScreen()),
+    GetPage(
+        name: MyRouter.onBoardingScreen, page: () => const OnBoardongScreen()),
+    GetPage(
+        name: MyRouter.onMobileLoginScreen,
+        page: () => const Mobile_Login_screen()),
+    GetPage(
+        name: MyRouter.onVerificationScreen,
+        page: () => const VerificationScreen()),
+    GetPage(
+        name: MyRouter.bottomNavBarHomeScreen,
+        page: () => const BottomNavBarHomeScreen()),
     GetPage(name: MyRouter.servicesScreen, page: () => const ServicesScreen()),
-    GetPage(name: MyRouter.storeListScreen, page: () => const StoreListScreen()),
+    GetPage(
+        name: MyRouter.storeListScreen, page: () => const StoreListScreen()),
     GetPage(name: MyRouter.storeScreen, page: () => const StoreScreen()),
     GetPage(name: MyRouter.summaryScreen, page: () => const SummaryScreen()),
-    GetPage(name: MyRouter.editProfileScreen, page: () => const EditProfileScreen())
+    GetPage(
+        name: MyRouter.editProfileScreen,
+        page: () => const EditProfileScreen()),
+    GetPage(
+        name: MyRouter.manageAddressScreen,
+        page: () => const ManageAddressScreen()),
+    GetPage(
+        name: MyRouter.referEarnScreen, page: () => const ReferEarnScreen()),
+    GetPage(
+        name: MyRouter.myBookingScreen, page: () => const MyBookingScreen()),
   ];
 }

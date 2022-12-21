@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class AppTheme {
   static const Color primaryColor = Color(0xffFFFFFF);
   static const Color greyColor = Color(0xff9C9CB4);
+  static const Color textfieldColor = Color(0xffEBEBEB);
+  static const Color dividerColor = Color(0xffEBEBEB);
 }
 
 MaterialColor primaryColorShades = MaterialColor(

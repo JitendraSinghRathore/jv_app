@@ -1,7 +1,9 @@
 class AppAssets {
   // Splash Screen Assets
-  static const String splashWhiteBackground = 'assets/images/splash_white_bg.png';
-  static const String splashBlackBackground = 'assets/images/splash_black_bg.png';
+  static const String splashWhiteBackground =
+      'assets/images/splash_white_bg.png';
+  static const String splashBlackBackground =
+      'assets/images/splash_black_bg.png';
   static const String splashLogo = 'assets/images/splash_logo.png';
   static const String welcomeLogo = 'assets/images/welcome_logo.png';
   static const String welcomeLine = 'assets/images/welcome_line.png';
@@ -13,10 +15,12 @@ class AppAssets {
   static const String nextOnBoarding = 'assets/images/next_onBoarding.png';
 
   static const String onBoardingBottom = 'assets/images/onBoardoingBottom.png';
-  static const String onBoardingLineLeft = 'assets/images/onBoardingLine_left.png';
-  static const String onBoardingLineRight = 'assets/images/onBoardingLine_right.png';
+  static const String onBoardingLineLeft =
+      'assets/images/onBoardingLine_left.png';
+  static const String onBoardingLineRight =
+      'assets/images/onBoardingLine_right.png';
 
- // verification Screen Assets
+  // verification Screen Assets
   static const String verification = 'assets/images/verification_back.png';
 
   // App logo
@@ -26,11 +30,9 @@ class AppAssets {
   static const String storeLogo = 'assets/images/store_logo.png';
   static const String account = 'assets/images/acount_logo.png';
 
-
   // Temp Asset
   static const String harry = 'assets/images/harry.png';
   static const String profile = 'assets/temp/profile.png';
-
 
   //Account Screen
   static const String aboutJEAccount = 'assets/images/about_je_account.png';
@@ -39,13 +41,13 @@ class AppAssets {
   static const String forwordAccount = 'assets/images/forword_account.png';
   static const String helpAccount = 'assets/images/help_account.png';
   static const String logoutAccount = 'assets/images/logout_account.png';
-  static const String manageAddressAccount = 'assets/images/manage_address_account.png';
+  static const String manageAddressAccount =
+      'assets/images/manage_address_account.png';
   static const String rateJEAccount = 'assets/images/rate_je_account.png';
   static const String rateUsAccount = 'assets/images/rate_us_account.png';
   static const String referEarnAccount = 'assets/images/refer_earn_account.png';
   static const String editIcon = 'assets/images/editIcon.png';
 
-
-
-
+  // Manage Address
+  static const String addIcon = 'assets/icon/add.png';
 }

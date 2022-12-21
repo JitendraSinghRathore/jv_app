@@ -74,13 +74,11 @@ class _AccountScreenState extends State<AccountScreen> {
                   ),
                 ),
                 Spacer(),
-
                 GestureDetector(
-                  onTap: ()
-                  {
+                  onTap: () {
                     Get.toNamed(MyRouter.editProfileScreen);
                   },
-                  child:  Align(
+                  child: Align(
                     alignment: Alignment.centerRight,
                     child: Container(
                       decoration: BoxDecoration(
@@ -96,12 +94,15 @@ class _AccountScreenState extends State<AccountScreen> {
                         animationDuration: const Duration(seconds: 1),
                         position: const BadgePosition(top: -4, end: 2),
                         showBadge: false,
-                        child: Image.asset(AppAssets.editIcon,height: 22,width: 22,),),
+                        child: Image.asset(
+                          AppAssets.editIcon,
+                          height: 22,
+                          width: 22,
+                        ),
+                      ),
                     ),
                   ),
                 )
-
-
               ],
             ),
           ),
@@ -147,80 +148,88 @@ class _AccountScreenState extends State<AccountScreen> {
                 ],
               ),
             ),
-            Container(
-              padding: EdgeInsets.only(left: 10, right: 10, top: 5),
-              child: Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      height: 30,
-                      width: 30,
-                      padding: const EdgeInsets.all(2),
-                      child: Image.asset(AppAssets.manageAddressAccount),
+            GestureDetector(
+              onTap: () {
+                Get.toNamed(MyRouter.manageAddressScreen);
+              },
+              child: Container(
+                padding: const EdgeInsets.only(left: 10, right: 10, top: 5),
+                child: Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(10),
+                      child: Container(
+                        height: 30,
+                        width: 30,
+                        padding: const EdgeInsets.all(2),
+                        child: Image.asset(AppAssets.manageAddressAccount),
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  const PoppinsAddText(
-                    textAlign: TextAlign.start,
-                    text: AppStrings.address,
-                    fontSize: 16,
-                    letterSpacing: 1,
-                    fontWeight: FontWeight.w600
-,
-                    color: Colors.black,
-                  ),
-                  Spacer(),
-                  Container(
-                    padding: const EdgeInsets.all(15),
-                    child: Container(
-                      height: 20,
-                      width: 20,
-                      padding: const EdgeInsets.all(2),
-                      child: Image.asset(AppAssets.forwordAccount),
+                    SizedBox(
+                      width: 10,
                     ),
-                  ),
-                ],
+                    const PoppinsAddText(
+                      textAlign: TextAlign.start,
+                      text: AppStrings.address,
+                      fontSize: 16,
+                      letterSpacing: 1,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black,
+                    ),
+                    Spacer(),
+                    Container(
+                      padding: const EdgeInsets.all(15),
+                      child: Container(
+                        height: 20,
+                        width: 20,
+                        padding: const EdgeInsets.all(2),
+                        child: Image.asset(AppAssets.forwordAccount),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-            Container(
-              padding: EdgeInsets.only(left: 10, right: 10, top: 5),
-              child: Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      height: 30,
-                      width: 30,
-                      padding: const EdgeInsets.all(2),
-                      child: Image.asset(AppAssets.referEarnAccount),
+            GestureDetector(
+              onTap: () {
+                Get.toNamed(MyRouter.referEarnScreen);
+              },
+              child: Container(
+                padding: EdgeInsets.only(left: 10, right: 10, top: 5),
+                child: Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(10),
+                      child: Container(
+                        height: 30,
+                        width: 30,
+                        padding: const EdgeInsets.all(2),
+                        child: Image.asset(AppAssets.referEarnAccount),
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  const PoppinsAddText(
-                    textAlign: TextAlign.start,
-                    text: AppStrings.earn,
-                    fontSize: 16,
-                    letterSpacing: 1,
-                    fontWeight: FontWeight.w600
-,
-                    color: Colors.black,
-                  ),
-                  Spacer(),
-                  Container(
-                    padding: const EdgeInsets.all(15),
-                    child: Container(
-                      height: 20,
-                      width: 20,
-                      padding: const EdgeInsets.all(2),
-                      child: Image.asset(AppAssets.forwordAccount),
+                    SizedBox(
+                      width: 10,
                     ),
-                  ),
-                ],
+                    const PoppinsAddText(
+                      textAlign: TextAlign.start,
+                      text: AppStrings.earn,
+                      fontSize: 16,
+                      letterSpacing: 1,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black,
+                    ),
+                    Spacer(),
+                    Container(
+                      padding: const EdgeInsets.all(15),
+                      child: Container(
+                        height: 20,
+                        width: 20,
+                        padding: const EdgeInsets.all(2),
+                        child: Image.asset(AppAssets.forwordAccount),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
             Container(
@@ -244,8 +253,7 @@ class _AccountScreenState extends State<AccountScreen> {
                     text: AppStrings.rateUs,
                     fontSize: 16,
                     letterSpacing: 1,
-                    fontWeight: FontWeight.w600
-,
+                    fontWeight: FontWeight.w600,
                     color: Colors.black,
                   ),
                   Spacer(),
@@ -285,8 +293,7 @@ class _AccountScreenState extends State<AccountScreen> {
                     text: AppStrings.about,
                     fontSize: 16,
                     letterSpacing: 1,
-                    fontWeight: FontWeight.w600
-,
+                    fontWeight: FontWeight.w600,
                     color: Colors.black,
                   ),
                   Spacer(),
@@ -323,8 +330,7 @@ class _AccountScreenState extends State<AccountScreen> {
                     text: AppStrings.rateJe,
                     fontSize: 16,
                     letterSpacing: 1,
-                    fontWeight: FontWeight.w600
-,
+                    fontWeight: FontWeight.w600,
                     color: Colors.black,
                   ),
                   Spacer(),
@@ -361,8 +367,7 @@ class _AccountScreenState extends State<AccountScreen> {
                     text: AppStrings.deleteAccount,
                     fontSize: 16,
                     letterSpacing: 1,
-                    fontWeight: FontWeight.w600
-,
+                    fontWeight: FontWeight.w600,
                     color: Colors.black,
                   ),
                 ],
@@ -389,8 +394,7 @@ class _AccountScreenState extends State<AccountScreen> {
                     text: AppStrings.logout,
                     fontSize: 16,
                     letterSpacing: 1,
-                    fontWeight: FontWeight.w600
-,
+                    fontWeight: FontWeight.w600,
                     color: Colors.black,
                   ),
                 ],
