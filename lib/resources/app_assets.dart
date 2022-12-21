@@ -50,4 +50,9 @@ class AppAssets {
 
   // Manage Address
   static const String addIcon = 'assets/icon/add.png';
+
+  //Support Screen
+  static const String supportLogo = 'assets/images/headphone.png';
+  static const String messageSupport = 'assets/images/message.png';
+  static const String callSupport = 'assets/images/call.png';
 }

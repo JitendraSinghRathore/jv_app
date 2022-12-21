@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:jv_app/resources/app_assets.dart';
+import 'package:jv_app/routers/my_router.dart';
 
 import '../../resources/app_theme.dart';
 import '../../resources/common_text.dart';
@@ -231,23 +232,30 @@ class _JEveuxScreenState extends State<JEveuxScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: const Color(0xffF3F3F3)
+              InkWell(
+                onTap: ()
+                {
+                  Get.toNamed(MyRouter.notificationScreen);
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: const Color(0xffF3F3F3)
+                  ),
+                  margin: const EdgeInsets.only(right: 14),
+                  height: 45,
+                  width: 45,
+                  padding: const EdgeInsets.all(2),
+                  alignment: Alignment.center,
+                  child: Badge(
+                      animationType: BadgeAnimationType.fade,
+                      animationDuration: const Duration(seconds: 1),
+                      position: const BadgePosition(top: -4,end: 2),
+                      showBadge: true,
+                      child: const FaIcon(FontAwesomeIcons.solidBell,color: Colors.black,size: 22,)),
                 ),
-                margin: const EdgeInsets.only(right: 14),
-                height: 45,
-                width: 45,
-                padding: const EdgeInsets.all(2),
-                alignment: Alignment.center,
-                child: Badge(
-                    animationType: BadgeAnimationType.fade,
-                    animationDuration: const Duration(seconds: 1),
-                    position: const BadgePosition(top: -4,end: 2),
-                    showBadge: true,
-                    child: const FaIcon(FontAwesomeIcons.solidBell,color: Colors.black,size: 22,)),
               ),
+
             ],
           ),
         ],

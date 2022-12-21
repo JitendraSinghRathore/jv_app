@@ -82,4 +82,13 @@ class AppStrings {
   static const String referalCodeTitle = "Your referral code";
   static const String copyCode = "Copy Code";
   static const String referAs = "Refer as";
+
+
+  //Support screen
+  static const String supportTitle = "Support";
+  static const String supportSubTitle = "How can we help you ?";
+  static const String chatSupport = "Chat support";
+  static const String callSupport = "Call support";
+  static const String mail1 = "or mail us at";
+  static const String mail2 = "hello@jeveux.co";
 }

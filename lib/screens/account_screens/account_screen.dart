@@ -400,48 +400,56 @@ class _AccountScreenState extends State<AccountScreen> {
                 ],
               ),
             ),
-            Align(
-              alignment: Alignment.bottomRight,
-              child: Container(
-                padding: const EdgeInsets.only(right: 40, top: 25),
+            InkWell(
+              onTap: ()
+              {
+                Get.toNamed(MyRouter.helpScreen);
+
+              },
+              child:  Align(
+                alignment: Alignment.bottomRight,
                 child: Container(
-                    decoration: BoxDecoration(
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey,
-                            offset: Offset(0.0, 1.0), //(x,y)
-                            blurRadius: 6.0,
-                          ),
-                        ],
-                        borderRadius: BorderRadius.circular(50),
-                        border: Border.all(color: Colors.white, width: 4),
-                        color: const Color(0xff52B46B)),
-                    height: 75,
-                    width: 75,
-                    child: Container(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            height: 25,
-                            width: 25,
-                            child: Image.asset(AppAssets.helpAccount),
-                          ),
-                          SizedBox(
-                            height: 3,
-                          ),
-                          const PoppinsAddText(
-                            textAlign: TextAlign.start,
-                            text: AppStrings.help,
-                            fontSize: 13,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.white,
-                          ),
-                        ],
-                      ),
-                    )),
+                  padding: const EdgeInsets.only(right: 40, top: 25),
+                  child: Container(
+                      decoration: BoxDecoration(
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey,
+                              offset: Offset(0.0, 1.0), //(x,y)
+                              blurRadius: 6.0,
+                            ),
+                          ],
+                          borderRadius: BorderRadius.circular(50),
+                          border: Border.all(color: Colors.white, width: 4),
+                          color: const Color(0xff52B46B)),
+                      height: 75,
+                      width: 75,
+                      child: Container(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              height: 25,
+                              width: 25,
+                              child: Image.asset(AppAssets.helpAccount),
+                            ),
+                            SizedBox(
+                              height: 3,
+                            ),
+                            const PoppinsAddText(
+                              textAlign: TextAlign.start,
+                              text: AppStrings.help,
+                              fontSize: 13,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.white,
+                            ),
+                          ],
+                        ),
+                      )),
+                ),
               ),
-            ),
+            )
+
           ],
         ),
       ),
